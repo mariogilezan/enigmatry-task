@@ -1,0 +1,17 @@
+{
+  "name": "enigmatry-task",
+  "version": "1.0.0",
+  "description": "enigmatry frontend assignment",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
