@@ -22,20 +22,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./scss/main.scss" />
     <title>Enigmatry Page | Home</title>
-    <style>
-      table {
-        border-collapse: collapse;
-      }
-      table,
-      th,
-      td {
-        border: 1px solid #333;
-      }
-      th,
-      td {
-        padding: 0.5rem;
-      }
-    </style>
   </head>
   <body>
     <!-- 1. Header -->
@@ -221,10 +207,13 @@
 
           <!-- Product Button Group -->
           <div class="product__btnGroup">
-            <button class="btn__primary btn--hover" type="button">
+            <button class="product__btn btn__primary btn--hover" type="button">
               Add to cart
             </button>
-            <button class="btn__primary--light btn--hover" type="button">
+            <button
+              class="product__btn btn__primary--light btn--hover"
+              type="button"
+            >
               Contact us
             </button>
           </div>
@@ -290,73 +279,81 @@
 
     <!-- 5. Specs Section -->
     <section class="specs">
-      <!-- Specs Title -->
-      <h2 class="specs__title">Technical specifications</h2>
+      <!-- Specs Content -->
+      <div class="specs__content container">
+        <!-- Specs Title -->
+        <h2 class="specs__title">Technical specifications</h2>
 
-      <!-- Specs Table -->
-      <table class="specs__table">
-        <thead>
-          <tr>
-            <th>Model</th>
-            <th>Frame size</th>
-            <th>Weight</th>
-            <th>Max speed</th>
-            <th>Battery</th>
-            <th>Engine</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Ladies - Small</td>
-            <td>50 cm</td>
-            <td>24 kg</td>
-            <td>45 km/h</td>
-            <td>625 Wh</td>
-            <td>Bosch Performance Line Speed</td>
-          </tr>
-          <tr>
-            <td>Ladies - Medium</td>
-            <td>55 cm</td>
-            <td>25 kg</td>
-            <td>45 km/h</td>
-            <td>625 Wh</td>
-            <td>Bosch Performance Line Speed</td>
-          </tr>
-          <tr>
-            <td>Ladies - Large</td>
-            <td>60 cm</td>
-            <td>26 kg</td>
-            <td>45 km/h</td>
-            <td>625 Wh</td>
-            <td>Bosch Performance Line Speed</td>
-          </tr>
-          <tr>
-            <td>Gents - Small</td>
-            <td>50 cm</td>
-            <td>24 kg</td>
-            <td>45 km/h</td>
-            <td>625 Wh</td>
-            <td>Bosch Performance Line Speed</td>
-          </tr>
-          <tr>
-            <td>Gents - Medium</td>
-            <td>55 cm</td>
-            <td>25 kg</td>
-            <td>45 km/h</td>
-            <td>625 Wh</td>
-            <td>Bosch Performance Line Speed</td>
-          </tr>
-          <tr>
-            <td>Gents - Large</td>
-            <td>60 cm</td>
-            <td>26 kg</td>
-            <td>45 km/h</td>
-            <td>625 Wh</td>
-            <td>Bosch Performance Line Speed</td>
-          </tr>
-        </tbody>
-      </table>
-      <!-- Specs Table End -->
+        <!-- Specs Table Wrapper -->
+        <div class="specs__tableWrapper">
+          <!-- Specs Table -->
+          <table class="specs__table">
+            <thead class="table__head">
+              <tr>
+                <th>Model</th>
+                <th>Frame size</th>
+                <th>Weight</th>
+                <th>Max speed</th>
+                <th>Battery</th>
+                <th>Engine</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr>
+                <td>Ladies - Small</td>
+                <td>50 cm</td>
+                <td>24 kg</td>
+                <td>45 km/h</td>
+                <td>625 Wh</td>
+                <td>Bosch Performance Line Speed</td>
+              </tr>
+              <tr>
+                <td>Ladies - Medium</td>
+                <td>55 cm</td>
+                <td>25 kg</td>
+                <td>45 km/h</td>
+                <td>625 Wh</td>
+                <td>Bosch Performance Line Speed</td>
+              </tr>
+              <tr>
+                <td>Ladies - Large</td>
+                <td>60 cm</td>
+                <td>26 kg</td>
+                <td>45 km/h</td>
+                <td>625 Wh</td>
+                <td>Bosch Performance Line Speed</td>
+              </tr>
+              <tr>
+                <td>Gents - Small</td>
+                <td>50 cm</td>
+                <td>24 kg</td>
+                <td>45 km/h</td>
+                <td>625 Wh</td>
+                <td>Bosch Performance Line Speed</td>
+              </tr>
+              <tr>
+                <td>Gents - Medium</td>
+                <td>55 cm</td>
+                <td>25 kg</td>
+                <td>45 km/h</td>
+                <td>625 Wh</td>
+                <td>Bosch Performance Line Speed</td>
+              </tr>
+              <tr>
+                <td>Gents - Large</td>
+                <td>60 cm</td>
+                <td>26 kg</td>
+                <td>45 km/h</td>
+                <td>625 Wh</td>
+                <td>Bosch Performance Line Speed</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Specs Table End -->
+        </div>
+        <!-- Specs Table Wrapper End -->
+      </div>
+      <!-- Specs Content End -->
     </section>
     <!-- Specs Section End -->
 
