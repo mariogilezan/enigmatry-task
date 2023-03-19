@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -11,6 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./scss/main.scss" />
     <title>Enigmatry Page | Home</title>
     <style>
@@ -20,7 +29,7 @@
       table,
       th,
       td {
-        border: 1px solid #fff;
+        border: 1px solid #333;
       }
       th,
       td {
@@ -31,31 +40,31 @@
   <body>
     <!-- 1. Header -->
     <header class="header">
-      <!-- Navigation End -->
-      <nav class="header__nav">
-        <!-- Mobile Menu Button -->
+      <!-- Navigation -->
+      <nav class="header__nav container">
+        <!-- Mobile Menu Toggle -->
         <div class="header__menuToggle">
           <i class="fa-solid fa-bars"></i>
         </div>
 
         <!-- Logo -->
-        <a href="/" class="headre__logo">
+        <a href="/" class="header__logo">
           <img src="./images/logo.svg" alt="site logo" />
         </a>
 
         <!-- Navigation List -->
         <ul class="header__list">
           <li class="header__item">
-            <a href="#" class="header__link">Products</a>
+            <a href="/" class="header__link">Products</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Services</a>
+            <a href="/services" class="header__link">Services</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">About us</a>
+            <a href="/about" class="header__link">About us</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Contact</a>
+            <a href="/contact" class="header__link">Contact</a>
           </li>
         </ul>
         <!-- Navigation List End -->
@@ -63,13 +72,13 @@
         <!-- Search Bar -->
         <div class="header__search">
           <input type="text" placeholder="Search" />
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-magnifying-glass icon"></i>
         </div>
 
         <!-- Account Icons -->
         <div class="header__accountIcons">
-          <i class="fa-regular fa-user"></i>
-          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-user icon"></i>
+          <i class="fa-regular fa-heart icon"></i>
           <div class="cart">
             <img
               src="./images/shopping-cart.svg"
