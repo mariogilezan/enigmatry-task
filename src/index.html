@@ -95,101 +95,144 @@
     <!-- Header End -->
 
     <!-- 2. Breacrumbs -->
-    <div class="breadcrumbs">
+    <div class="breadcrumbs container">
       <span class="breadcrumbs__item">Home</span>
-      <i class="fa-solid fa-chevron-right"></i>
+      <i class="fa-solid fa-chevron-right icon"></i>
       <span class="breadcrumbs__item">Products</span>
-      <i class="fa-solid fa-chevron-right"></i>
+      <i class="fa-solid fa-chevron-right icon"></i>
       <span class="breadcrumbs__item">Bikes</span>
     </div>
     <!-- Breacrumbs End -->
 
     <!-- 3. Product Section -->
-    <section class="product">
-      <!-- Product Title -->
-      <h1 class="product__title">Product name lorem ipsum</h1>
+    <section class="product container">
+      <!-- Product Header -->
+      <div class="product__header">
+        <!-- Product Title -->
+        <h1 class="product__title">Product name lorem ipsum</h1>
 
-      <!-- Product Image -->
-      <div class="product__image">
-        <i class="fa-solid fa-circle-chevron-left"></i>
-        <img src="./images/bike.jpg" alt="bike image" />
-        <i class="fa-solid fa-circle-chevron-right"></i>
+        <!-- Product Icons -->
+        <div class="product__icons">
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-right"></i>
+          <i class="fa-regular fa-heart"></i>
+          <img src="./images/share-nodes.svg" alt="share nodes icon" />
+        </div>
       </div>
+      <!-- Product Header End -->
 
-      <!-- Product Details -->
-      <div class="product__details">
-        <!-- Product Stock -->
-        <h4 class="product__stock">In stock <span>- only 2 left</span></h4>
+      <!-- Product Content -->
+      <div class="product__content">
+        <!-- Product Image -->
+        <div class="product__image">
+          <button class="iconWrapper iconWrapper--left" type="button">
+            <i class="fa-solid fa-chevron-left icon"></i>
+          </button>
+          <img src="./images/bike.jpg" alt="bike image" />
+          <button class="iconWrapper iconWrapper--right" type="button">
+            <i class="fa-solid fa-chevron-right icon"></i>
+          </button>
+        </div>
 
-        <!-- Product Text -->
-        <p class="product__text">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </p>
+        <!-- Product Details -->
+        <div class="product__details">
+          <!-- Product Stock -->
+          <h4 class="product__stock">In stock <span>- only 2 left</span></h4>
 
-        <!-- Product Options -->
-        <div class="product__options">
-          <!-- Product Dropdown Group -->
-          <div class="product__dropdownGroup">
-            <!-- Product Dropdown Model -->
-            <div class="product__dropdown">
-              <label for="model">Model</label>
-              <select name="model" id="model">
-                <option value="ladies-small">Ladies - Small</option>
-                <option value="ladies-medium">Ladies - Medium</option>
-                <option value="ladies-Large">Ladies - Large</option>
-                <option value="gents-small">Gents - Small</option>
-                <option value="gents-medium" selected>Gents - Medium</option>
-                <option value="gents-large">Gents - Large</option>
-              </select>
+          <!-- Product Text -->
+          <p class="product__text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+
+          <!-- Product Options -->
+          <div class="product__options">
+            <!-- Product Dropdown Group -->
+            <div class="product__dropdownGroup">
+              <!-- Product Dropdown Model -->
+              <div class="product__dropdown">
+                <label for="model">Model</label>
+                <select name="model" id="model">
+                  <option value="ladies-small">Ladies - Small</option>
+                  <option value="ladies-medium">Ladies - Medium</option>
+                  <option value="ladies-Large">Ladies - Large</option>
+                  <option value="gents-small">Gents - Small</option>
+                  <option value="gents-medium" selected>Gents - Medium</option>
+                  <option value="gents-large">Gents - Large</option>
+                </select>
+                <i class="fa-solid fa-chevron-down arrow"></i>
+              </div>
+              <!-- Product Dropdown Model End -->
+
+              <!-- Product Dropdown Color -->
+              <div class="product__dropdown">
+                <label for="color">Color</label>
+                <select name="color" id="color">
+                  <option value="white">White</option>
+                  <option value="black" selected>Black</option>
+                  <option value="blue">Blue</option>
+                </select>
+                <i class="fa-solid fa-chevron-down arrow"></i>
+              </div>
+              <!-- Product Dropdown Color End -->
             </div>
-            <!-- Product Dropdown Model End -->
+            <!-- Product Dropdown Group End -->
 
-            <!-- Product Dropdown Color -->
-            <div class="product__dropdown">
-              <label for="color">Color</label>
-              <select name="color" id="color">
-                <option value="white">White</option>
-                <option value="black" selected>Black</option>
-                <option value="blue">Blue</option>
-              </select>
+            <!-- Product Checkbox Group -->
+            <div class="product__checkGroup">
+              <!-- Product Checkbox -->
+              <div class="product__checkbox">
+                <label for="optionOne">
+                  <input
+                    type="checkbox"
+                    name="optionOne"
+                    id="optionOne"
+                    class="input"
+                    checked
+                  />
+                  <i class="fa-regular fa-square square"></i>
+                  <i class="fa-solid fa-square-check square--check"></i>
+                  Add option lorem ipsum</label
+                >
+              </div>
+              <!-- Product Checkbox End -->
+
+              <!-- Product Checkbox -->
+              <div class="product__checkbox">
+                <label for="optionTwo">
+                  <input
+                    type="checkbox"
+                    name="optionTwo"
+                    id="optionTwo"
+                    class="input"
+                  />
+                  <i class="fa-regular fa-square square"></i>
+                  <i class="fa-solid fa-square-check square--check"></i>
+                  Add option autpat velit cano totam rem aperiam</label
+                >
+              </div>
+              <!-- Product Checkbox End -->
             </div>
-            <!-- Product Dropdown Color End -->
+            <!-- Product Checkbox Group End -->
           </div>
-          <!-- Product Dropdown Group End -->
-
-          <!-- Product Checkbox Group -->
-          <div class="product__checkboxGroup">
-            <!-- Product Checkbox -->
-            <div class="product__checkbox">
-              <input type="checkbox" name="optionOne" id="optionOne" />
-              <label for="optionOne">Add option lorem ipsum</label>
-            </div>
-            <!-- Product Checkbox End -->
-
-            <!-- Product Checkbox -->
-            <div class="product__checkbox">
-              <input type="checkbox" name="optionTwo" id="optionTwo" />
-              <label for="optionTwo"
-                >Add option autpat velit cano totam rem aperiam</label
-              >
-            </div>
-            <!-- Product Checkbox End -->
-          </div>
-          <!-- Product Checkbox Group End -->
+          <!-- Product Options End -->
 
           <!-- Product Button Group -->
           <div class="product__btnGroup">
-            <button class="product__btn" type="button">Add to cart</button>
-            <button class="product__btn" type="button">Contact us</button>
+            <button class="btn__primary btn--hover" type="button">
+              Add to cart
+            </button>
+            <button class="btn__primary--light btn--hover" type="button">
+              Contact us
+            </button>
           </div>
           <!-- Product Button Group End -->
         </div>
-        <!-- Product Options End -->
+        <!-- Product Details End -->
       </div>
-      <!-- Product Details End -->
+      <!-- Product Content End -->
     </section>
     <!-- Product Section End -->
 
@@ -227,6 +270,14 @@
           laudantium.
         </p>
         <!-- Description Text End -->
+
+        <!-- Description Button -->
+        <button
+          class="description__btn btn__secondary--light btn--hover"
+          type="button"
+        >
+          More Info
+        </button>
 
         <!-- Description Image -->
         <div class="description__image">
