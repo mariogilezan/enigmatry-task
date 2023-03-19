@@ -24,6 +24,9 @@
     @media (max-width: 700px) {
       display: block;
     }
+    @media (max-width: 300px) {
+      margin-right: 1rem;
+    }
   }
 
   &__logo {
@@ -36,6 +39,9 @@
     @media (max-width: 800px) {
       width: 6.5625rem;
       height: 1.75rem;
+    }
+    @media (max-width: 320px) {
+      width: 5rem;
     }
 
     img {
@@ -69,12 +75,12 @@
       flex-direction: column;
       justify-content: center;
       gap: 4rem;
-      transform: translateX(100%);
+      transform: translateY(100%);
     }
   }
 
   &__list.open {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
     transition: transform 0.3s ease-in, opacity 0.25s ease-in;
   }
@@ -164,6 +170,9 @@
     gap: 1.5rem;
     font-size: 1.25rem;
     z-index: 60;
+    @media (max-width: 320px) {
+      gap: 0.5rem;
+    }
 
     .icon {
       cursor: pointer;
