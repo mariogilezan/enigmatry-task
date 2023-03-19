@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: $dark;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 7rem;
+  @media (max-width: 1240px) {
+    padding: 0 4rem;
+  }
+  @media (max-width: 900px) {
+    padding: 0 2.5rem;
+  }
+  @media (max-width: 800px) {
+    padding: 0 1.5rem;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
