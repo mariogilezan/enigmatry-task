@@ -1,0 +1,195 @@
+.header {
+  background-color: $orange;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  color: $white;
+  position: relative;
+  @media (max-width: 800px) {
+    height: 4.375rem;
+  }
+
+  &__nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__menuToggle {
+    display: none;
+    font-size: 1.25rem;
+    margin-right: 1.9375rem;
+    cursor: pointer;
+    @media (max-width: 700px) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    width: 9.375rem;
+    height: 2.5rem;
+    margin-right: 3.625rem;
+    @media (max-width: 1240px) {
+      margin-right: auto;
+    }
+    @media (max-width: 800px) {
+      width: 6.5625rem;
+      height: 1.75rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-right: 2.5rem;
+    height: 100%;
+    @media (max-width: 1300px) {
+      gap: 1.5rem;
+      margin-right: auto;
+    }
+    @media (max-width: 1200px) {
+      gap: 1rem;
+    }
+    @media (max-width: 700px) {
+      opacity: 0;
+      background-color: $orange;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 50;
+      width: 50vw;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4rem;
+      transform: translateX(100%);
+    }
+  }
+
+  &__list.open {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.3s ease-in, opacity 0.25s ease-in;
+  }
+
+  &__link {
+    color: inherit;
+    font-size: 1.125rem;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.25s ease-in-out;
+    @media (max-width: 800px) {
+      font-size: 1rem;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: $black;
+      opacity: 0;
+      position: absolute;
+      left: -5;
+      right: -5;
+      bottom: -49px;
+      @media (max-width: 800px) {
+        bottom: -24.5px;
+      }
+      @media (max-width: 700px) {
+        bottom: -12.5px;
+      }
+    }
+
+    &:hover {
+      color: $dark;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  .active {
+    color: $dark;
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &__search {
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    position: relative;
+    color: $dark;
+    @media (max-width: 1240px) {
+      width: 12rem;
+    }
+    @media (max-width: 980px) {
+      display: none;
+    }
+
+    input {
+      width: 100%;
+      padding: 1.125rem 1rem;
+      font-size: 0.875rem;
+      color: inherit;
+      border: 0;
+      border-radius: 4px 4px 0 0;
+      &::placeholder {
+        color: inherit;
+      }
+    }
+
+    .icon {
+      font-size: 1.25rem;
+      position: absolute;
+      top: 1.1875rem;
+      right: 0.875rem;
+      color: inherit;
+    }
+  }
+
+  &__accountIcons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+    z-index: 60;
+
+    .icon {
+      cursor: pointer;
+    }
+
+    .cart {
+      display: flex;
+      position: relative;
+      cursor: pointer;
+
+      &__icon {
+        width: 23px;
+        height: 20px;
+      }
+
+      &__number {
+        width: 20px;
+        height: 20px;
+        display: grid;
+        place-content: center;
+        border-radius: 100%;
+        font-size: 15px;
+        background-color: $green;
+        position: absolute;
+        bottom: -8px;
+        right: -10px;
+      }
+    }
+  }
+}
