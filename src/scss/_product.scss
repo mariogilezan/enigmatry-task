@@ -1,0 +1,256 @@
+.product {
+  margin-top: 1.625rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+
+    @media (max-width: 700px) {
+      font-size: 1.75rem;
+      line-height: 1.3;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    font-size: 20px;
+
+    @media (max-width: 600px) {
+      align-self: flex-end;
+    }
+
+    i,
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @media (max-width: 980px) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .iconWrapper {
+      width: 3.5rem;
+      height: 3.5rem;
+      background-color: $lightGray;
+      border: none;
+      border-radius: 100%;
+      display: grid;
+      place-content: center;
+      font-size: 1.5rem;
+      color: $dark;
+      cursor: pointer;
+      position: absolute;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+
+      @media (max-width: 600px) {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.25rem;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+      }
+
+      &:active {
+        transform: scale(1);
+        box-shadow: none;
+      }
+
+      &--left {
+        left: 0;
+      }
+
+      &--right {
+        right: 0;
+      }
+    }
+  }
+
+  &__details {
+    max-width: 30.5rem;
+    align-self: stretch;
+    padding: 0 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 4.125rem;
+    background-color: $lightGray;
+
+    @media (max-width: 1300px) {
+      max-width: 25.5rem;
+    }
+
+    @media (max-width: 980px) {
+      align-self: center;
+      max-width: 30.5rem;
+    }
+
+    @media (max-width: 600px) {
+      padding: 32px 1.5rem;
+    }
+  }
+
+  &__stock {
+    margin-bottom: 0.825rem;
+    font-family: 'Inter', sans-serif;
+    span {
+      color: $orange;
+    }
+  }
+
+  &__text {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 600px) {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.33rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__dropdownGroup {
+    display: flex;
+    gap: 1.375rem;
+
+    @media (max-width: 700px) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__dropdown {
+    background-color: $white;
+    width: 200px;
+    height: 56px;
+    padding: 0 1rem;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+
+    label {
+      font-size: 11px;
+      color: $darkGray;
+      margin: 4px 0;
+    }
+
+    select {
+      background: transparent;
+      border: 0;
+      padding-top: 0.8rem;
+      font-size: 0.875rem;
+      position: absolute;
+      left: 1rem;
+      right: 12px;
+      bottom: 0;
+      top: 0;
+      appearance: none;
+      z-index: 10;
+    }
+
+    .arrow {
+      position: absolute;
+      right: 12px;
+      bottom: 16px;
+      font-size: 15px;
+    }
+  }
+
+  &__checkGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__checkbox {
+    label {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 14px;
+      line-height: 1.7;
+      cursor: pointer;
+      position: relative;
+
+      @media (max-width: 600px) {
+        gap: 0.75rem;
+      }
+    }
+
+    .input {
+      opacity: 0;
+      width: 17px;
+      height: 17px;
+
+      &:checked ~ .square--check {
+        opacity: 1;
+      }
+
+      &:focus-visible {
+        opacity: 1;
+      }
+    }
+
+    .square,
+    .square--check {
+      font-size: 20px;
+      position: absolute;
+    }
+
+    .square {
+      color: $checkBorder;
+      opacity: 1;
+    }
+
+    .square--check {
+      color: $green;
+      opacity: 0;
+    }
+  }
+
+  &__btnGroup {
+    display: flex;
+    gap: 0.5rem;
+
+    @media (max-width: 400px) {
+      justify-content: space-between;
+    }
+  }
+}
