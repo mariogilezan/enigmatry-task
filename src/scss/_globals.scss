@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: $fontFamilyPrimary;
   color: $dark;
   overflow-x: hidden;
 }
@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $fontFamilySecondary;
   font-weight: 600;
 }
 
@@ -34,11 +34,11 @@ select,
 input,
 label,
 textarea {
-  font-family: 'Inter', sans-serif;
+  font-family: $fontFamilyPrimary;
 }
 
 button {
-  font-family: 'Poppins', sans-serif;
+  font-family: $fontFamilySecondary;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
