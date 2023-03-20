@@ -6,7 +6,7 @@
   #{$property}: $value;
 }
 
-@mixin brakepoint($width) {
+@mixin breakpoint($width) {
   @media (max-width: $width) {
     @content;
   }
