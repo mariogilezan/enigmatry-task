@@ -59,6 +59,44 @@
     <title>Enigmatry Page | Home</title>
   </head>
   <body>
+    <!-- Overlay -->
+    <div class="overlay">
+      <!-- Overlay Contact -->
+      <div class="overlay__contact">
+        <div id="close-overlay" type="button" class="overlay__close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h2 class="overlay__title">Contact us</h2>
+        <p class="overlay__subtitle">
+          We’ll get back to you as soon as possible.
+        </p>
+        <form class="overlay__form">
+          <input
+            class="overlay__email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your e-mail"
+          />
+          <textarea
+            class="overlay__message"
+            name="message"
+            id="message"
+            placeholder="Your message"
+          ></textarea>
+          <div class="overlay__btnGroup">
+            <button type="button" class="overlay__btn overlay__btn--cancel">
+              Cancel
+            </button>
+            <button type="button" class="overlay__btn overlay__btn--send">
+              Send message
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- Overlay Contact End -->
+    </div>
+    <!-- Overlay End -->
     <!-- 1. Header -->
     <header class="header">
       <!-- Navigation -->
