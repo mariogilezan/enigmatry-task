@@ -7,7 +7,7 @@
     font-size: 1.75rem;
     line-height: 1.3;
     margin-bottom: 2rem;
-    @media (max-width: 700px) {
+    @include brakepoint(700px) {
       font-size: 1.5rem;
       line-height: 1.35;
     }
@@ -32,7 +32,7 @@
 
     .table__head {
       th {
-        color: $orange;
+        color: $primary;
         font-weight: 600;
       }
     }
