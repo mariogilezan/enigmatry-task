@@ -100,18 +100,18 @@
     &::before {
       content: '';
       display: block;
-      height: 5px;
+      height: 0.3125rem;
       background-color: $black;
       opacity: 0;
       position: absolute;
-      left: -5;
-      right: -5;
-      bottom: -49px;
+      left: -0.3125rem;
+      right: -0.3125rem;
+      bottom: -3.0625rem;
       @include breakpoint(50em) {
-        bottom: -24.5px;
+        bottom: -1.53125rem;
       }
       @include breakpoint(43.75em) {
-        bottom: -12.5px;
+        bottom: -0.78125rem;
       }
     }
 
@@ -185,21 +185,21 @@
       cursor: pointer;
 
       &__icon {
-        width: 23px;
-        height: 20px;
+        width: 1.4375rem;
+        height: 1.25rem;
       }
 
       &__number {
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
         display: grid;
         place-content: center;
         border-radius: $fullBorderRadius;
-        font-size: 15px;
+        font-size: 0.9375rem;
         background-color: $secondary;
         position: absolute;
-        bottom: -8px;
-        right: -10px;
+        bottom: -0.5rem;
+        right: -0.625rem;
       }
     }
   }

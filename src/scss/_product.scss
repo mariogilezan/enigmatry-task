@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     gap: 1.25rem;
-    font-size: 20px;
+    font-size: 1.25rem;
     @include breakpoint(37.5em) {
       align-self: flex-end;
     }
@@ -36,7 +36,7 @@
   }
 
   &__content {
-    margin-top: 36px;
+    margin-top: 2.25rem;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -108,7 +108,7 @@
       max-width: 32.5rem;
     }
     @include breakpoint(37.5em) {
-      padding: 32px 1.5rem;
+      padding: 2rem 1.5rem;
     }
     @include breakpoint(18.75em) {
       width: 100%;
@@ -149,8 +149,8 @@
 
   &__dropdown {
     background-color: $white;
-    width: 200px;
-    height: 56px;
+    width: 12.5rem;
+    height: 3.5rem;
     padding: 0 1rem;
     border-radius: $topBorderRadius;
     display: flex;
@@ -161,7 +161,7 @@
     }
 
     label {
-      font-size: 11px;
+      font-size: 0.6875rem;
       color: $darkGray;
       margin: 4px 0;
     }
@@ -173,7 +173,7 @@
       font-size: 0.875rem;
       position: absolute;
       left: 1rem;
-      right: 12px;
+      right: 0.75rem;
       bottom: 0;
       top: 0;
       appearance: none;
@@ -183,9 +183,9 @@
 
     .arrow {
       position: absolute;
-      right: 12px;
-      bottom: 16px;
-      font-size: 15px;
+      right: 0.75rem;
+      bottom: 1rem;
+      font-size: 0.9375rem;
     }
   }
 
@@ -201,7 +201,7 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 1.7;
       cursor: pointer;
       position: relative;
@@ -212,8 +212,8 @@
 
     .input {
       opacity: 0;
-      width: 17px;
-      height: 17px;
+      width: 1.0625rem;
+      height: 1.0625rem;
 
       &:checked ~ .square--check {
         opacity: 1;
@@ -226,7 +226,7 @@
 
     .square,
     .square--check {
-      font-size: 20px;
+      font-size: 1.25rem;
       position: absolute;
     }
 
