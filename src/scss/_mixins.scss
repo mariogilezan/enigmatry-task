@@ -1,0 +1,13 @@
+@mixin defaultTransition($property) {
+  transition: $property 0.2s ease;
+}
+
+@mixin defaultHover($property, $value) {
+  #{$property}: $value;
+}
+
+@mixin brakepoint($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
