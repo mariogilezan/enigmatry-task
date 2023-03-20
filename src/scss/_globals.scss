@@ -67,16 +67,16 @@ button {
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 7rem;
-  @include brakepoint(1240px) {
+  @include breakpoint(77.5em) {
     padding: 0 4rem;
   }
-  @include brakepoint(900px) {
+  @include breakpoint(56.25em) {
     padding: 0 2.5rem;
   }
-  @include brakepoint(800px) {
+  @include breakpoint(50em) {
     padding: 0 1.5rem;
   }
-  @include brakepoint(400px) {
+  @include breakpoint(25em) {
     padding: 0 1rem;
   }
 }

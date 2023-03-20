@@ -3,26 +3,26 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  @include brakepoint(980px) {
+  @include breakpoint(61.25em) {
     margin-top: 2rem;
   }
-  @include brakepoint(500px) {
+  @include breakpoint(31.25em) {
     gap: 1.5rem;
     justify-content: center;
   }
-  @include brakepoint(400px) {
+  @include breakpoint(25em) {
     gap: 1rem;
   }
-  @include brakepoint(300px) {
+  @include breakpoint(18.75em) {
     gap: 0.5rem;
   }
 
   li {
     font-weight: 600;
-    @include brakepoint(400px) {
+    @include breakpoint(25em) {
       font-size: 0.8rem;
     }
-    @include brakepoint(320px) {
+    @include breakpoint(20em) {
       font-size: 0.6rem;
     }
   }
@@ -40,14 +40,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  @include brakepoint(1150px) {
+  @include breakpoint(71.875em) {
     grid-template-columns: 1fr;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    @include brakepoint(1150px) {
+    @include breakpoint(71.875em) {
       order: 2;
     }
   }
@@ -56,7 +56,7 @@
     font-size: 1.75rem;
     line-height: 1.3;
     margin-bottom: 2rem;
-    @include brakepoint(700px) {
+    @include breakpoint(43.75em) {
       font-size: 1.5rem;
       line-height: 1.35;
     }
@@ -64,13 +64,13 @@
 
   &__text {
     max-width: 488px;
-    @include brakepoint(1150px) {
+    @include breakpoint(71.875em) {
       max-width: 70%;
     }
-    @include brakepoint(800px) {
+    @include breakpoint(50em) {
       max-width: 80%;
     }
-    @include brakepoint(600px) {
+    @include breakpoint(37.5em) {
       max-width: 100%;
     }
 
@@ -81,7 +81,7 @@
 
   &__image {
     width: 100%;
-    @include brakepoint(1150px) {
+    @include breakpoint(71.875em) {
       order: 1;
     }
 
