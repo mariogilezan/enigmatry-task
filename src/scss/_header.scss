@@ -149,7 +149,7 @@
       font-size: 0.875rem;
       color: inherit;
       border: 0;
-      border-radius: 4px 4px 0 0;
+      border-radius: $topBorderRadius;
       &::placeholder {
         color: inherit;
       }
@@ -193,7 +193,7 @@
         height: 20px;
         display: grid;
         place-content: center;
-        border-radius: 100%;
+        border-radius: $fullBorderRadius;
         font-size: 15px;
         background-color: $secondary;
         position: absolute;

@@ -59,7 +59,7 @@
       height: 3.5rem;
       background-color: $lightGray;
       border: none;
-      border-radius: 100%;
+      border-radius: $fullBorderRadius;
       display: grid;
       place-content: center;
       font-size: 1.5rem;
@@ -152,7 +152,7 @@
     width: 200px;
     height: 56px;
     padding: 0 1rem;
-    border-radius: 4px 4px 0 0;
+    border-radius: $topBorderRadius;
     display: flex;
     flex-direction: column;
     position: relative;
